@@ -5,7 +5,9 @@
      <meta name="description" content="internship resume.">
      <meta name="keywords" content="resumes, cover letters, application letters">
      <link rel="canonical" href="https://husseinseid.github.io/practical/index.html"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/style.css">
     <style>
         .header{border-style: dotted;}
         img{
@@ -13,11 +15,13 @@
             height: 100vmax
         }
         .header{
-            background-color: yellow;
-            font-size: larger;
-            padding: 5px;
-            text-align: center;
-            width:100vw;
+            text-align: center;   
+            font-size: 70px;
+            font-weight: 600;
+            background-image: linear-gradient(to left, #553c9a, #b393d3);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
         }
         li{
             padding: 5px;
@@ -29,27 +33,43 @@
             font-weight: bold;
         }
 
-        #left{
-            float: left;
-        }
-
         *{
             box-sizing: border-box;
+        }
+        div{
+                        max-width: 100%;
+        }
+        .upper{
+            background-color: aquamarine;
+            width:100vw;
+        }
+
+        figcaption{
+            text-align: center;
+            width:100vw;
+        }
+
+        footer{
+            background-color: teal;
+            width:100vw;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-            HOUSSEIN MOHAMED SEID
-    </div>
+    <div class="upper">
+        <div class="header">
+                HOUSSEIN MOHAMED SEID
+        </div>
+        <br />   
 
-    <br />
-    
-    <figure style="padding:5px;">
-        <img src="imgs/profile.jpg" alt="Profile" style="width:300px; height: 300px;">
-        <figcaption>Houssein Mohamed Seid.</figcaption>
-      </figure>
+        <figure style="padding:5px;">
+            <center><img src="imgs/profile.jpg" alt="Profile" style="width:100px; height: 100px;"></center>     
+            <figcaption>
+                JUNIOR FULL STACK DEVELOPER
+            </figcaption>   
+        </figure>
+    </div>
 
     <span class="sub"><u>OBJECTIVE</u></span>
     <br />A Junior Full-stack Developer. 
@@ -58,7 +78,6 @@
             <ul style="margin-top:20px;"> 
                 <li><a href="#education">EDUCATION BACKGROUND</a></li>
                 <li><a href="#skill">EXPERTISE AND SKILL</a></li>
-                <li><a href="#work">WORK HISTORY</a></li>
                 <li><a href="#additional">ADDITIONAL INFORMATION</a></li>
             </ul>
 
@@ -73,7 +92,7 @@
             <ul>
                 <li>Class Marshall Award</li>
                 <li>Dean’s List Academic Achievement Award</li>
-                <li>Data Science Project: Financial Market Analysis Using Machine Learning</li>
+                <li>Data Science Project Using Machine Learning</li>
                 <li>Capstone Project: Enterprise Data Lake</li>
             </ul>
 
@@ -96,15 +115,32 @@
 
 
 
-
+<div>
     <p> <a name="Skill" class="Skill" id="additional"><u>ADDITIONAL INFORMATION</u></a> </p>
     Additional
     Organized computer and English literacy workshops for underprivileged children in South Asia, 2013
     Student Scholarship Recipient, National Conference on Race and Ethnicity, 2007-2008
+</div>
 
-<script>
-    alert('this site uses cookies');
-</script>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Powered by github</p>
+      </footer>
+
+      <script>
+        function facebook()
+        {
+            location.href='https://facebook.com';
+        }
+
+        function twitter(){
+            location.href='https://twitter.com';
+        }
+    </script> 
 </body>
-
 </html>
